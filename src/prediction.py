@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 
-from tensorflow.keras.models import load_model
-from sklearn.metrics import classification_report, confusion_matrix
+import tensorflow as tf
+import numpy as np
+from tensorflow.keras.preprocessing import image
 
 
-class ModelPredictor:
-    def __init__(self, model_path):
-        self.model = load_model(model_path)
+# Function to predict a single image
+def predict_image(model, img_path):
+    img = image.load_img(img_path, target_size=(224, 224))
+    img_array = image.img_to_array(img)
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = img_array / 255.0
 
-    def make_predictions(self, test_generator):
-        y_pred = (self.model.predict(test_generator) > 0.5).astype(int).flatten()
-        y_true = test_generator.classes
-        return y_true, y_pred
-
-    def display_results(self, y_true, y_pred):
-        print(confusion_matrix(y_true, y_pred))
-        print(classification_report(y_true, y_pred, target_names=['Normal', 'Atelectasis']))
-
+    # Predict
+    prediction = model.predict(img_array)
+    return prediction
