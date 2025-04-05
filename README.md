@@ -79,7 +79,7 @@ Response:
 ```
 **POST**
 
-"/upload/"
+/upload/
 
 **Description:** Upload training data (images).
 
@@ -94,7 +94,7 @@ Response:
 ```
 **POST**
 
-"/retrain/"
+/retrain/
 
 **Description:** Retrain model with new uploaded data.
 
