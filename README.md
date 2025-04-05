@@ -1,20 +1,28 @@
-# 🧠 Lung Disease Prediction API (FastAPI + Docker)
+#  Lung Disease Prediction API (FastAPI + Docker)
 
 This is a backend API built with **FastAPI** to support a lung disease prediction app. It uses a trained deep learning model (e.g., CNN) to classify chest X-ray images into multiple lung diseases and supports uploading data and retraining the model. This backend is containerized with Docker.
 
 ---
 
-## 🚀 Features
+# Link to Front-End
+https://1772hojaz.github.io/LungDisease-Front-End/
 
-- ✅ Predict lung disease from chest X-ray image
-- ⬆️ Upload new training data (images)
-- 🔁 Trigger model retraining
-- 📊 Get model performance metrics after retraining
-- 🔒 CORS enabled for local frontend development
+---
+# Link to Front-End Repository
+https://github.com/1772hojaz/LungDisease-Front-End
+
+---
+## Features
+
+-  Predict lung disease from chest X-ray image
+-  Upload new training data (images)
+-  Trigger model retraining
+-  Get model performance metrics after retraining
+-  CORS enabled for local frontend development
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 - **FastAPI** for REST API
 - **TensorFlow / Keras** for ML model
@@ -24,7 +32,7 @@ This is a backend API built with **FastAPI** to support a lung disease predictio
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 . ├── app/ │ ├── main.py # FastAPI app │ ├── model.py # Model loading & prediction │ ├── train.py # Retraining logic │ └── utils.py # Utilities ├── data/ # Uploaded training data ├── model/ # Saved models ├── Dockerfile ├── requirements.txt └── README.md
 
@@ -32,7 +40,7 @@ yaml
 
 ---
 
-## 🐳 Docker Setup
+##  Docker Setup
 
 ### 1. Clone the repository
 
@@ -51,9 +59,10 @@ yaml
 ```
 The API will be accessible at: http://127.0.0.1:8000
 
-🧪 API Endpoints
-POST /predict/
-Description: Predict disease from an uploaded image.
+# API Endpoints
+**POST** /predict/
+
+**Description:** Predict disease from an uploaded image.
 
 Form Data: file (image)
 
@@ -65,8 +74,8 @@ Response:
   "confidence": 0.88
 }
 ```
-POST /upload/
-Description: Upload training data (images).
+**POST** /upload/
+**Description:** Upload training data (images).
 
 Form Data: One or more image files.
 
@@ -77,8 +86,8 @@ Response:
   "message": "Files uploaded successfully."
 }
 ```
-POST /retrain/
-Description: Retrain model with new uploaded data.
+**POST** /retrain/
+**Description:** Retrain model with new uploaded data.
 
 Response:
 
