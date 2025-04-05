@@ -60,7 +60,10 @@ yaml
 The API will be accessible at: http://127.0.0.1:8000
 
 # API Endpoints
-**POST** /predict/
+**POST**
+
+/predict/
+
 
 **Description:** Predict disease from an uploaded image.
 
@@ -74,7 +77,10 @@ Response:
   "confidence": 0.88
 }
 ```
-**POST** /upload/
+**POST**
+
+"/upload/"
+
 **Description:** Upload training data (images).
 
 Form Data: One or more image files.
@@ -86,7 +92,10 @@ Response:
   "message": "Files uploaded successfully."
 }
 ```
-**POST** /retrain/
+**POST**
+
+"/retrain/"
+
 **Description:** Retrain model with new uploaded data.
 
 Response:
