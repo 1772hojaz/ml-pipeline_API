@@ -34,8 +34,17 @@ https://github.com/1772hojaz/LungDisease-Front-End
 
 ##  Project Structure
 
-```yaml
-. ├── app/ │ ├── main.py # FastAPI app │ ├── model.py # Model loading & prediction │ ├── train.py # Retraining logic │ └── utils.py # Utilities ├── data/ # Uploaded training data ├── model/ # Saved models ├── Dockerfile ├── requirements.txt └── README.md
+```graphql
+├── app/
+│   ├── main.py        # FastAPI app with API endpoints
+│   ├── model.py       # Model loading and prediction logic
+│   ├── train.py       # Model retraining functionality
+│   
+├── data/              # Directory for uploaded training data
+├── model/             # Directory for saved/retrained models
+├── Dockerfile         # Docker configuration for containerization
+├── requirements.txt   # Python dependencies
+└── README.md          # 
 ```
 
 ---
