@@ -1,6 +1,6 @@
-#  Lung Disease Prediction API (FastAPI + Docker)
+#  Lung Disease Prediction API (FastAPI & Docker)
 
-This is a backend API built with **FastAPI** to support a lung disease prediction app. It uses a trained deep learning model (e.g., CNN) to classify chest X-ray images into multiple lung diseases and supports uploading data and retraining the model. This backend is containerized with Docker.
+This is a backend API built with **FastAPI** to support a lung disease prediction app. It uses a trained deep learning model (CNN) to classify chest X-ray images into multiple lung diseases and supports uploading data and retraining the model. This backend is containerized with Docker.
 
 ---
 
@@ -34,9 +34,9 @@ https://github.com/1772hojaz/LungDisease-Front-End
 
 ##  Project Structure
 
+```yaml
 . ├── app/ │ ├── main.py # FastAPI app │ ├── model.py # Model loading & prediction │ ├── train.py # Retraining logic │ └── utils.py # Utilities ├── data/ # Uploaded training data ├── model/ # Saved models ├── Dockerfile ├── requirements.txt └── README.md
-
-yaml
+```
 
 ---
 
