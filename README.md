@@ -2,6 +2,12 @@
 
 This is a backend API built with **FastAPI** to support a lung disease prediction app. It uses a trained deep learning model (CNN) to classify chest X-ray images into multiple lung diseases and supports uploading data and retraining the model. This backend is containerized with Docker.
 
+
+---
+# Link to Video
+[![Watch the video](https://img.youtube.com/vi/6kN2Jg3XTcY/0.jpg)](https://youtu.be/6kN2Jg3XTcY)
+
+
 ---
 
 # Link to Front-End
