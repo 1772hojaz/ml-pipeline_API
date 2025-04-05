@@ -64,11 +64,11 @@ https://github.com/1772hojaz/LungDisease-Front-End
   cd lung-disease-api
   ```
 
-2. Build Docker image
+### 2. Build Docker image
   ```bash
     docker build -t lung-api .
   ```
-3. Run the container
+### 3. Run the container
   ```bash
     docker run -d -p 8000:8000 lung-api
 ```
